@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <title>Happy Diwali 2024</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #c087e7;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .fireworks {
+            position: fixed;
+        }
+
+        section.content {
+            z-index: 1;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+			/* margin-left: px; */
+        }
+
+        section.content h2 {
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            font-size: 6em;
+            line-height: 0.9em;
+        }
+
+        section.content h2 c {
+            color: #fff;
+            -webkit-text-stroke: 0 #fff;
+        }
+
+        section.content h2 span {
+            position: relative;
+            background: #fff;
+            font-size: 0.2em;
+            display: inline-block;
+            color: #000;
+            padding: 0 10px;
+            top: -30px;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1.5em;
+            -webkit-text-stroke: 0px #fff;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        section.content img {
+            max-width: 300px;
+            opacity: 0.5;
+            mix-blend-mode: overlay;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+            section.content h2 {
+                font-size: 5em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section.content h2 {
+                font-size: 3em;
+            }
+
+            section.content h2 span {
+                top: -20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section.content h2 {
+                font-size: 2em;
+            }
+
+            section.content h2 span {
+                font-size: 0.5em;
+                top: -10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="fireworks" id="sec1"></section>
+    <section class="content" id="sec2">
+        <h2>
+            Happy <c>Diwali</c>
+            
+			<span>Lets celebrate the festival</span>
+			<br>
+			<p style="font-size: 20px;">scroll</p>
+
+        </h2>
+    </section>
+    <section class="content" id="sec3">
+        <h2>
+            <c>in the true sense</c> by spreading <br>
+            joy and light
+        </h2>
+    </section>
+    <section class="content" id="sec4">
+        <h2>
+            Have a Happy,<c>Safe and blessed Diwali! :)</c>
+        </h2>
+    </section>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="jquery.fireworks.js"></script>
+    <script type="text/javascript">
+        $('.fireworks').fireworks({
+            sound: true, // sound effect
+            opacity: 0.9,
+            width: '100%',
+            height: '100%'
+        });
+    </script>
+</body>
+</html>
